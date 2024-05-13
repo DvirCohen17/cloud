@@ -63,4 +63,6 @@ public:
 	virtual void deletePermissionRequests(int userId, int fileId) = 0;
 	virtual void deletePermission(int fileId) = 0;
 	virtual void deleteAllPermissionReq(int fileId) = 0;
+	virtual void changePassword(std::string username, std::string opdPass, std::string newPass) = 0;
+
 };
