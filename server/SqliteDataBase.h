@@ -38,6 +38,8 @@ public:
 	void deletePermissionRequests(int userId, int fileId) override;
 	void deletePermission(int fileId) override;
 	void deleteAllPermissionReq(int fileId) override;
+	void changePassword(std::string username, std::string opdPass, std::string newPass) override;
+
 
 private:
 	sqlite3* _db;
