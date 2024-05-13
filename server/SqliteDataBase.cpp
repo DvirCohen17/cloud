@@ -352,6 +352,15 @@ bool SqliteDataBase::addNewUser(std::string username, std::string password, std:
 	return send(_db, msg);
 }
 
+void SqliteDataBase::changePassword(std::string username, std::string opdPass, std::string newPass)
+{
+	std::string msg;
+
+	msg = "UPDATE users SET password = \'" + newPass + "\' WHERE user_name = \'" + username + "\'; ";
+
+	send(_db, msg);
+}
+
 void SqliteDataBase::UpdateChat(const std::string& fileName, const std::string& data)
 {
 	std::string msg;
