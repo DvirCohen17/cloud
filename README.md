@@ -1,6 +1,7 @@
 # cloud
 This is a multy server-client project.
 you can use it to create and write a text file with your friends in live, give permission to other to join your files, each file also contain a private chat.
+in this project i did only the sync server and the client.
  
 To see the code you can go into the "code" branch.
 
